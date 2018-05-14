@@ -24,6 +24,7 @@ public class BaseTestCase extends TestCase {
 		System.setProperty("webdriver.chrome.driver", CHROMEpATH);
 		Thread.sleep(1000);
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 		System.out.println(baseUrl);
 		driver.get(baseUrl);
 	}
