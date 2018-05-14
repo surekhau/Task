@@ -29,7 +29,7 @@ public class UserAccountsPage {
 		waitForElement(driver, accountDropdownLocatore);
 		waitTill(3000);
 		sendKeys(driver, accountDropdownLocatore, "acdc4ever");
-		waitTill(7000);
+		waitTill(10000);
 		driver.findElement(accountValueLocator).sendKeys(Keys.ENTER);
 	}
 

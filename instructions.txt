@@ -1,0 +1,12 @@
+Necessary tools:
+Maven
+Eclipse for java EE developers
+Java JDK
+Testng
+
+Steps:
+Please integrate eclipse with maven and testng
+clone the code from github repository url : https://github.com/surekhau/CanopyTask.git
+Go to eclipse : import maven project
+Right click on testing.xml file and click on Run as TestNG suite
+
