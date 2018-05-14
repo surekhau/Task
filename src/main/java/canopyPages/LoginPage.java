@@ -63,11 +63,18 @@ public class LoginPage {
 		assertTrue(userName + " is not logged in", verifyElementPresent(driver, userNameTextAfterLogin));
 	}
 
+	/**
+	 * @author: SUREKHA
+	 * @Desc: This function is used to login to the application with username
+	 *        and password
+	 * @param driver
+	 * @throws Exception
+	 */
 	public static void loginToTheApplication(WebDriver driver) throws Exception {
-		fillUserName(driver);
-		fillPassword(driver);
-		clickOnLoginButton(driver);
-		verifyUserNameAfterLogin(driver);
+		fillUserName(driver); // fill username
+		fillPassword(driver); // fill password
+		clickOnLoginButton(driver); // click on login
+		verifyUserNameAfterLogin(driver); // verify whether logged in or not
 	}
 
 }
