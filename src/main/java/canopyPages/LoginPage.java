@@ -38,6 +38,7 @@ public class LoginPage {
 	public static void fillPassword(WebDriver driver) throws Exception {
 		waitForElement(driver, passwordTextbox);
 		sendKeys(driver, passwordTextbox, password);
+		System.out.println("test");
 	}
 
 	/**
