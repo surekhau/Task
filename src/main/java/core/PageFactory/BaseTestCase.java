@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.TestCase;
 
 public class BaseTestCase extends TestCase {
@@ -21,7 +22,7 @@ public class BaseTestCase extends TestCase {
 	@Override
 	@BeforeClass
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver", CHROMEpATH);
+		WebDriverManager.chromedriver().setup();
 		Thread.sleep(1000);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
