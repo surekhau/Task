@@ -28,6 +28,7 @@ public class BaseTestCase extends TestCase {
 		driver.manage().window().maximize();
 		System.out.println(baseUrl);
 		driver.get(baseUrl);
+		System.out.println("Testing CICD");
 	}
 
 	@Override
